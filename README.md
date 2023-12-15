@@ -2,7 +2,7 @@
 This is a readme file about the User Interface (UI) for a compiler using Java. The UI consists of various buttons and a text area to display the source code and the results of the compilation process.
 
 ## Features:
-1. Open File button: This button allows you to open a file containing your source code. You can choose a .java file to open.
+1. Open File button: This button allows you to open a file containing your source code. You can choose a .txt file to open.
 
 2. Lexical Analysis button: This button starts the lexical analysis process of the source code. The results of this process will be displayed in the Result Text area.
 
