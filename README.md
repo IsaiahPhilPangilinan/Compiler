@@ -1,4 +1,5 @@
-# Compiler UI using Java ![java image](https://github.com/IsaiahPhilPangilinan/Compiler/assets/142380105/6306e1a4-4e5e-44e8-8ec8-b85a7cf43d9a)
+# Compiler UI using Java 
+![java image](https://github.com/IsaiahPhilPangilinan/Compiler/assets/142380105/70150713-17bb-49c9-851e-972222ec39a4)
 
 This is a readme file about the User Interface (UI) for a compiler using Java. The UI consists of various buttons and a text area to display the source code and the results of the compilation process.
 
