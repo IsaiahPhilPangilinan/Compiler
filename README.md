@@ -1,11 +1,15 @@
 # Compiler UI using Java 
 <p align="center">
-  <img width="300" height="300" src="https://github.com/IsaiahPhilPangilinan/Compiler/assets/142380105/58b05904-cb00-456f-8661-73174982d843">
+  <img width="200" height="200" src="https://www.jedecore.com/gif/internet/java.gif">
 </p>
 
 This is a readme file about the User Interface (UI) for a compiler using Java. The UI consists of various buttons and a text area to display the source code and the results of the compilation process.
 
 ## Features:
+<p align="center">
+  <img width="500" height="400" src="https://github.com/IsaiahPhilPangilinan/Compiler/assets/142380105/5f512823-43dd-4c9e-ab84-bc9451598f27">
+</p>
+
 1. Open File button: This button allows you to open a file containing your source code. You can choose a .txt file to open.
 
 2. Lexical Analysis button: This button starts the lexical analysis process of the source code. The results of this process will be displayed in the Result Text area.
@@ -21,6 +25,10 @@ This is a readme file about the User Interface (UI) for a compiler using Java. T
 7. Source Code area: This is a text area where the source code is displayed.
 
 ## Prerequisites:
+<p align="center">
+  <img width="200" height="200" src="https://www.aztek.co.il/wp-content/uploads/2022/05/IntelliJ_IDEA_Icon.svg_.png">
+  <img width="350" height="200" src="https://clipground.com/images/eclipse-logo-6.jpg">
+</p>
 1. JDK (Java Development Kit) should be installed on your system.
 2. An Integrated Development Environment (IDE) like Eclipse or IntelliJ IDEA is recommended.
 
@@ -33,4 +41,3 @@ This is a readme file about the User Interface (UI) for a compiler using Java. T
 6. Create a new class with a main method to run the application.
 7. Compile and run the application.
 
-For detailed information on implementing the UI, you can refer to the Java documentation or search for online tutorials on creating GUI applications in Java.
