@@ -1,6 +1,6 @@
 # Compiler UI using Java 
 <p align="center">
-  <img width="460" height="300" src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/java_logo_icon_168609.png/460/300">
+  <img width="460" height="300" src="https://pbs.twimg.com/profile_images/1410016948977422337/rKU8iR89_400x400.png/460/300">
 </p>
 
 This is a readme file about the User Interface (UI) for a compiler using Java. The UI consists of various buttons and a text area to display the source code and the results of the compilation process.
