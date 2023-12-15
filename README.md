@@ -1,6 +1,6 @@
 # Compiler UI using Java 
 <p align="center">
-  <img width="460" height="300" src="(https://github.com/IsaiahPhilPangilinan/Compiler/assets/142380105/58b05904-cb00-456f-8661-73174982d843)">
+  <img width="300" height="300" src="https://github.com/IsaiahPhilPangilinan/Compiler/assets/142380105/58b05904-cb00-456f-8661-73174982d843">
 </p>
 
 This is a readme file about the User Interface (UI) for a compiler using Java. The UI consists of various buttons and a text area to display the source code and the results of the compilation process.
