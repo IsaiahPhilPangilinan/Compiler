@@ -19,6 +19,7 @@ public class Compiler extends JFrame{
     private int syntaxAnalysis = 0;
     private int semanticAnalysis = 0;
     private String chosenFile = "";
+    private String expression = "";
 
     public Compiler() {
         setContentPane(mainUI);
@@ -78,16 +79,21 @@ public class Compiler extends JFrame{
     }
 
     private void syntaxAnalysisActionPerformed(ActionEvent e) {
-        if (syntaxAnalysis == 1) {
-            syntaxAnalysis();
-            semanticAnalysis = 1;
+        if (syntaxAnalysis == 1 && lexicalAnalysis == 1) {
+            int num = 0;
+            syntaxAnalysis(num);
+            if (num == 0) {
+                semanticAnalysis = 0;
+            } else {
+                semanticAnalysis = 1;
+            }
         } else {
             JOptionPane.showMessageDialog(Compiler.this, "You need to pass the lexical analysis first!");
         }
     }
 
     private void semanticAnalysisActionPerformed(ActionEvent e) {
-        if (semanticAnalysis == 1) {
+        if (semanticAnalysis == 1 && syntaxAnalysis == 1 && lexicalAnalysis == 1) {
             semanticAnalysis();
         } else {
             JOptionPane.showMessageDialog(Compiler.this, "You need to pass the lexical and syntax analysis first!");
@@ -112,7 +118,6 @@ public class Compiler extends JFrame{
                 Scanner sc = new Scanner(selectedFile);
                 while (sc.hasNextLine()) {
                     String input = sc.nextLine();
-                    System.out.println(input);
                     chosenFile += input;
                     codeText.append(input + "\n");
                 }
@@ -130,20 +135,23 @@ public class Compiler extends JFrame{
     private static final String DELIMITER = ";";
 
     private void lexicalAnalysis() {
-        System.out.println(chosenFile);
         String[] tokens = splitExpression(chosenFile).toArray(new String[0]);
 
-        // Analyze each token
         for (String token : tokens) {
             if (isDataType(token)) {
+                expression += "<data_type>";
                 resultText.append("<data_type> ");
             } else if (token.equals(ASSIGNMENT_OPERATOR)) {
+                expression += "<assignment_operator>";
                 resultText.append("<assignment_operator> ");
             } else if (token.equals(DELIMITER)) {
+                expression += "<delimiter>";
                 resultText.append("<delimiter> ");
             } else if (isValue(token)) {
+                expression += "<value>";
                 resultText.append("<value> ");
             } else {
+                expression += "<identifier>";
                 resultText.append("<identifier> ");
             }
         }
@@ -185,8 +193,14 @@ public class Compiler extends JFrame{
         return tokens;
     }
 
-    private void syntaxAnalysis() {
-
+    private int syntaxAnalysis(int num) {
+        if (expression.equals("<data_type><identifier><assignment_operator><value><delimiter>")) {
+            resultText.append("\nSyntax Analysis: Passed!");
+            return 1;
+        } else {
+            resultText.append("\nSyntax Analysis: Failed!");
+            return 0;
+        }
     }
 
     private void semanticAnalysis() {
