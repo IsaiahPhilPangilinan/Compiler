@@ -26,11 +26,20 @@ As computer science students embarking on the journey of compiler construction, 
 
 ## Prerequisites:
 <p align="center">
-  <img width="210" height="220" src="https://www.aztek.co.il/wp-content/uploads/2022/05/IntelliJ_IDEA_Icon.svg_.png">
-  <img width="400" height="275" src="https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/EClipse-900x0.png">
+  <a href="https://www.jetbrains.com/idea/download/?section=windows">
+    <img width="10%" src="https://www.aztek.co.il/wp-content/uploads/2022/05/IntelliJ_IDEA_Icon.svg_.png">
+  </a>
+  <a href="https://www.eclipse.org/downloads/packages/release/indigo/r/eclipse-ide-java-developers">
+    <img width="15%" src="https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/EClipse-900x0.png">
+  </a>
+  <a href="https://www.java.com/en/download/help/download_options.html">
+    <img width="20%" src="https://logolook.net/wp-content/uploads/2022/11/Java-Emblem.png">
+  </a>
 </p>
-1. JDK (Java Development Kit) should be installed on your system.
-2. An Integrated Development Environment (IDE) like Eclipse or IntelliJ IDEA is recommended.
+
+1. JDK (Java Development Kit) should be installed on your system. (Click the image to download)
+
+2. An Integrated Development Environment (IDE) like Eclipse or IntelliJ IDEA is recommended. (Click the image to download)
 
 ## Getting Started:
 1. Open your IDE and create a new Java project.
