@@ -7,7 +7,7 @@ This is a readme file about the User Interface (UI) for a compiler using Java. T
 
 ## Features:
 <p align="center">
-  <img width="500" height="400" src="https://github.com/IsaiahPhilPangilinan/Compiler/assets/142380105/5f512823-43dd-4c9e-ab84-bc9451598f27">
+  <img width="500" height="400" src="https://github.com/IsaiahPhilPangilinan/Compiler/assets/142433516/183cca24-966d-42d8-ae98-15fc0f5083ba">
 </p>
 
 1. Open File button: This button allows you to open a file containing your source code. You can choose a .txt file to open.
