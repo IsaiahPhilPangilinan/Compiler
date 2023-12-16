@@ -3,7 +3,7 @@
   <img width="200" height="200" src="https://lordicon.com/icons/wired/gradient/1323-java-code-language.gif">
 </p>
 
-This is a readme file about the User Interface (UI) for a compiler using Java. The UI consists of various buttons and a text area to display the source code and the results of the compilation process.
+As computer science students embarking on the journey of compiler construction, we often encounter complex interfaces and opaque error messages. This can hinder our understanding of the compilation process and impede our learning. To address this challenge, we present our user interface (UI) design for a compiler specifically tailored for beginners.
 
 ## Features:
 <p align="center">
