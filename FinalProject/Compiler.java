@@ -20,6 +20,7 @@ public class Compiler extends JFrame{
     private int semanticAnalysis = 0;
     private String chosenFile = "";
     private String expression = "";
+    private boolean isPassed = false;
 
     public Compiler() {
         setContentPane(mainUI);
@@ -80,12 +81,11 @@ public class Compiler extends JFrame{
 
     private void syntaxAnalysisActionPerformed(ActionEvent e) {
         if (syntaxAnalysis == 1 && lexicalAnalysis == 1) {
-            int num = 0;
-            syntaxAnalysis(num);
-            if (num == 0) {
-                semanticAnalysis = 0;
-            } else {
+            syntaxAnalysis();
+            if (isPassed == true) {
                 semanticAnalysis = 1;
+            } else {
+                semanticAnalysis = 0;
             }
         } else {
             JOptionPane.showMessageDialog(Compiler.this, "You need to pass the lexical analysis first!");
@@ -94,7 +94,12 @@ public class Compiler extends JFrame{
 
     private void semanticAnalysisActionPerformed(ActionEvent e) {
         if (semanticAnalysis == 1 && syntaxAnalysis == 1 && lexicalAnalysis == 1) {
-            semanticAnalysis();
+            String[] tokens = splitExpression(chosenFile).toArray(new String[0]);
+            if (semanticAnalysis(tokens)) {
+                resultText.append("\n\nSemantically Correct!");
+            } else {
+                resultText.append("\n\nSemantically Incorrect!");
+            }
         } else {
             JOptionPane.showMessageDialog(Compiler.this, "You need to pass the lexical and syntax analysis first!");
         }
@@ -193,18 +198,43 @@ public class Compiler extends JFrame{
         return tokens;
     }
 
-    private int syntaxAnalysis(int num) {
+    private void syntaxAnalysis() {
         if (expression.equals("<data_type><identifier><assignment_operator><value><delimiter>")) {
-            resultText.append("\nSyntax Analysis: Passed!");
-            return 1;
+            resultText.append("\n\nSyntax Analysis: Passed!");
+            isPassed = true;
         } else {
-            resultText.append("\nSyntax Analysis: Failed!");
-            return 0;
+            resultText.append("\n\nSyntax Analysis: Failed!");
+            isPassed = false;
         }
     }
 
-    private void semanticAnalysis() {
+    private boolean semanticAnalysis(String[] tokens) {
+        String dataType = tokens[0];
+        String variableName = tokens[1];
+        String assignmentOperator = tokens[2];
+        String value = tokens[3].replaceAll(";$", "");
 
+        try {
+            if (dataType.equals("int")) {
+                Integer.parseInt(value);
+            } else if (dataType.equals("double")) {
+                Double.parseDouble(value);
+            } else if (dataType.equals("String")) {
+                if (!value.startsWith("\"") || !value.endsWith("\"")) {
+                    return false;
+                }
+            } else if (dataType.equals("char")) {
+                if (!value.startsWith("\'") || !value.endsWith("\'")) {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        } catch (NumberFormatException e) {
+            return false;
+        }
+
+        return true;
     }
 
     public static void main(String[] args) {
