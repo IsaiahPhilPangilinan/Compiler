@@ -41,6 +41,14 @@ As computer science students embarking on the journey of compiler construction, 
 6. Create a new class with a main method to run the application.
 7. Compile and run the application.
 
+## Demo Video
+The video below provided is the Video Demonstration on how to use the Compiler program:
+<p align="center">
+  <a href="https://drive.google.com/file/d/1OGqrCxRXpFXmE8Pbdb7EozMyzSk4irYW/view?usp=drive_link">
+    <img src="https://github.com/IsaiahPhilPangilinan/Compiler/assets/142433516/73e4c0d6-bc60-4ce4-a03f-422fd8b14dc9" width="50%" align="center">
+  </a>
+</p>
+
 ## MIT License
 
 Copyright (c) 2023 COMPWEDE
