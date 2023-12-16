@@ -1,6 +1,6 @@
 # Compiler UI using Java 
 <p align="center">
-  <img width="200" height="200" src="https://lordicon.com/icons/wired/gradient/1323-java-code-language.gif">
+  <img width="600" height="300" src="https://www.teknologisk.dk/_/media/73745">
 </p>
 
 As computer science students embarking on the journey of compiler construction, we often encounter complex interfaces and opaque error messages. This can hinder our understanding of the compilation process and impede our learning. To address this challenge, we present our user interface (UI) design for a compiler specifically tailored for beginners.
