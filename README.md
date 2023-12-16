@@ -26,8 +26,8 @@ This is a readme file about the User Interface (UI) for a compiler using Java. T
 
 ## Prerequisites:
 <p align="center">
-  <img width="200" height="200" src="https://www.aztek.co.il/wp-content/uploads/2022/05/IntelliJ_IDEA_Icon.svg_.png">
-  <img width="350" height="200" src="https://clipground.com/images/eclipse-logo-6.jpg">
+  <img width="210" height="220" src="https://www.aztek.co.il/wp-content/uploads/2022/05/IntelliJ_IDEA_Icon.svg_.png">
+  <img width="400" height="275" src="https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/EClipse-900x0.png">
 </p>
 1. JDK (Java Development Kit) should be installed on your system.
 2. An Integrated Development Environment (IDE) like Eclipse or IntelliJ IDEA is recommended.
@@ -41,3 +41,24 @@ This is a readme file about the User Interface (UI) for a compiler using Java. T
 6. Create a new class with a main method to run the application.
 7. Compile and run the application.
 
+## MIT License
+
+Copyright (c) 2023 COMPWEDE
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
